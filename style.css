@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "James Stroker";
+  src: url("font/James\ Stroker.ttf") format("truetype");
+}
+
+:root {
+  --first-color: #fdaa11;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/ss-bg.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.navbar {
+  margin-top: 40px;
+  background-color: rgba(51, 51, 51, 0) !important;
+}
+
+.navbar a {
+  color: var(--first-color) !important;
+}
+
+.nav-link {
+  margin-right: 20px;
+  padding: 10px 20px !important;
+  border: 1px solid var(--first-color);
+  border-radius: 20px;
+}
+
+.navbar a:hover {
+  color: white !important;
+}
+
+.nav-link:hover {
+  background-color: var(--first-color);
+  color: white;
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+  height: 100vh;
+}
+
+.hero h1 {
+  font-family: "James Stroker";
+  font-size: 7rem;
+  line-height: 5rem;
+}
+
+.hero p {
+  color: var(--first-color);
+}
+
+/* ================== ABOUT SECTION ================== */
+.about {
+  height: 70vh;
+  /* padding: 100px; */
+  background-color: rgba(29, 29, 29, 0.582);
+  color: var(--first-color);
+}
+
+.about .logo-about img {
+  width: 300px;
+}
+
+/* ================== PRODUCT SECTION ================== */
+.product {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.product h2 {
+  font-family: "James Stroker";
+  font-size: 5rem;
+  color: var(--first-color);
+}
+
+/* ================== FOOTER SECTION ================== */
+footer {
+  background-color: rgb(29, 29, 29);
+  color: #555;
+  padding: 60px 0;
+  margin-top: 70px;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer ul li a {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+footer ul li a:hover {
+  color: var(--first-color);
+}
+
+.sambal a {
+  text-decoration: none;
+  color: var(--first-color);
+}
